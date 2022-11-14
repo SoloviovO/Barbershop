@@ -5,40 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <a href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services and prices</a></li>
-          <li><a href="#barber">Barbers</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+        <ul class="list site-nav">
+          <li><a class="link" href="#about">About</a></li>
+          <li><a class="link" href="#services">Services and prices</a></li>
+          <li><a class="link" href="#barber">Barbers</a></li>
+          <li><a class="link" href="#contacts">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a class="contact-phone" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="button main" type="button">Online-booking</button>
     </header>
     <main>
       <!-- Hero -->
-      <section>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
-        <ul>
-          <li><a href="">Back</a></li>
-          <li><a href="">Forward</a></li>
+      <section class="hero">
+        <p class="hero-preview">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-text">
+          We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+        </p>
+        <ul class="list">
+          <li><a class="hero-link-back" href="">Back</a></li>
+          <li><a class="hero-link-forward" href="">Forward</a></li>
         </ul>
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
+        <ul class="list">
+          <li>
+            <a
+              class="hero-social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener nofollower noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="hero-social-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener nofollower noreferrer"
+              >Youtube</a
+            >
+          </li>
         </ul>
       </section>
       <!-- About -->
       <section id="about">
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/aboutone.jpg" alt="photo barber-one" width="270" height="445" />
           </li>
@@ -55,7 +80,7 @@
           team that is always "on the same wave" with clients. Therefore, we are always ready to
           improve everyone who comes to us!
         </p>
-        <button type="button">online-booking</button>
+        <button class="button" type="button">online-booking</button>
       </section>
       <!-- Services and prices -->
       <section id="services">
@@ -97,7 +122,7 @@
             <p>from 200 uah.</p>
           </li>
         </ul>
-        <button type="button">online-booking</button>
+        <button class="button main" type="button">online-booking</button>
       </section>
       <!-- Old traditional school -->
       <section>
@@ -109,19 +134,27 @@
         </p>
         <ul>
           <li>
-            <p>600</p>
+            <p>
+              600<span><sup>+</sup></span>
+            </p>
             <p>Satisfied customers per day</p>
           </li>
           <li>
-            <p>50</p>
+            <p>
+              50<span><sup>+</sup></span>
+            </p>
             <p>Awards for excellent service</p>
           </li>
           <li>
-            <p>20</p>
+            <p>
+              20<span><sup>+</sup></span>
+            </p>
             <p>Kyiv’s best barbers</p>
           </li>
           <li>
-            <p>100</p>
+            <p>
+              100<span><sup>+</sup></span>
+            </p>
             <p>Gifts for regular customers</p>
           </li>
         </ul>
@@ -170,6 +203,7 @@
       <section>
         <h2>Online-booking</h2>
         <form action=""></form>
+        <button type="button" class="button main">send</button>
       </section>
       <!-- Contacts -->
       <section id="contacts">
