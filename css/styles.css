@@ -13,18 +13,41 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--white-color);
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
 }
 
 .list {
   list-style: none;
 }
 
+.preview {
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
 /* Header */
 
-.site-nav .link {
+header {
+  background-color: teal;
+}
+
+.site-nav-link {
   color: var(--white-color);
-  background-color: var(--secondary-bg-color);
   text-decoration: none;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
 }
 
 .site-nav .link:hover,
@@ -34,14 +57,26 @@ body {
 
 .contact-phone {
   color: var(--white-color);
-  background-color: var(--secondary-bg-color);
   text-decoration: none;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .button {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
-  /* background-color: transparent; */
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  background-color: transparent;
+}
+
+.button:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .button.main {
@@ -51,7 +86,7 @@ body {
 /* Hero */
 
 .hero {
-  background-color: var(--secondary-bg-color);
+  background-color: teal;
 }
 
 .hero-preview {
@@ -60,25 +95,40 @@ body {
 
 .hero-title {
   color: var(--white-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
 }
 
 .hero-text {
   color: var(--third-text-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+
+.hero-link {
+  text-decoration: none;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
 }
 
 .hero-link-back {
-  text-decoration: none;
   color: var(--transp-sixty-text-color);
 }
 
 .hero-link-forward {
-  text-decoration: none;
   color: var(--white-color);
 }
 
 .hero-social-link {
   color: currentColor;
   text-decoration: none;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
 }
 
 .hero-social-link:hover,
@@ -88,12 +138,158 @@ body {
 
 /* About */
 
+.about-preview {
+  color: var(--primary-text-color);
+}
+
+.about-title {
+  color: var(--primary-text-color);
+}
+
 .about-call {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
 }
 
 .about-text {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
 }
 
 /* Services and prices */
+
+.services {
+  background-color: teal;
+}
+
+.services-preview {
+  color: var(--transp-sixty-text-color);
+}
+
+.services-title {
+  color: var(--white-color);
+}
+
+.services-list-title,
+.services-list-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+/* Old traditional school */
+
+.tradt-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.tradt-amount {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+}
+
+.tradt-content {
+  line-height: calc(15 / 11);
+}
+
+/* Our barbers */
+
+.barber {
+  background-color: var(--primary-bg-color);
+}
+
+.barber-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.02em;
+}
+
+.barber-content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* Photo */
+
+/* Online-booking */
+
+.booking,
+.contacts {
+  background-color: var(--secondary-bg-color);
+}
+
+.booking-title,
+.contacts-title {
+  color: var(--white-color);
+}
+
+.contacts-address {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+  text-decoration: none;
+}
+
+.contacts-link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+  text-decoration: none;
+}
+
+.mail {
+  text-decoration-line: underline;
+}
+
+.contacts-time-title {
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.contacts-time {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+/* Footer */
+
+.copyright {
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--third-text-color);
+}
+
+.foot-social-link {
+  text-decoration: none;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: currentColor;
+}
