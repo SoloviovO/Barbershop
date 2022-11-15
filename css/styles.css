@@ -85,3 +85,15 @@ body {
 .hero-social-link:focus {
   color: var(--accent-color);
 }
+
+/* About */
+
+.about-call {
+  color: var(--secondary-text-color);
+}
+
+.about-text {
+  color: var(--secondary-text-color);
+}
+
+/* Services and prices */
